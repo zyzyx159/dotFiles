@@ -9,7 +9,7 @@ This is my personal collection of settings for my PCs.
   2. Put the files there
 
 ## Linux Notes:
-- Lunarvim = ~/.config/lvim/
-- Starship = ~/.config/
-- Tmux = ~/.config/tmux/
-- Zsh = ~/
+- Lunarvim = ~/.config/lvim/config.lua 
+- Starship = ~/.config/starship.toml
+- Tmux = ~/.config/tmux/tmux.conf
+- Zsh = ~/.zshrc
