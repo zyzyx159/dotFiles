@@ -9,6 +9,7 @@ vim.opt.number = true
 vim.opt.linebreak = true
 vim.opt.wrap = true
 vim.opt.linebreak = true
+
 -- general
 lvim.log.level = "info"
 lvim.format_on_save = {
@@ -16,6 +17,7 @@ lvim.format_on_save = {
 	pattern = "*.lua",
 	timeout = 1000,
 }
+
 -- to disable icons and use a minimalist setup, uncomment the following
 -- lvim.use_icons = false
 
@@ -24,9 +26,12 @@ lvim.leader = "space"
 
 -- add your own keymapping
 lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
-
 lvim.keys.normal_mode["<S-l>"] = ":BufferLineCycleNext<CR>"
 lvim.keys.normal_mode["<S-h>"] = ":BufferLineCyclePrev<CR>"
+lvim.keys.normal_mode["j"] = "gj"
+lvim.keys.normal_mode["k"] = "gk"
+lvim.keys.normal_mode["<up>"] = "gk"
+lvim.keys.normal_mode["<down>"] = "gj"
 
 -- -- Use which-key to add extra bindings with the leader-key prefix
 -- lvim.builtin.which_key.mappings["W"] = { "<cmd>noautocmd w<cr>", "Save without formatting" }
