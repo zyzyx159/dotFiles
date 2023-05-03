@@ -9,6 +9,7 @@ vim.opt.number = true
 vim.opt.linebreak = true
 vim.opt.wrap = true
 vim.opt.linebreak = true
+vim.opt.spell = true
 
 -- general
 lvim.log.level = "info"
