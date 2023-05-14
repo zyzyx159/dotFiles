@@ -8,6 +8,7 @@ This is my personal collection of settings for my PCs.
 - PowerShell:
   1. in terminal run '$profile'
   2. Put the files there
+  3. New-Item -ItemType SymbolicLink -Path $path -Target $target
 
 ## Linux Notes:
 - Lunarvim = ~/.config/lvim/config.lua 
