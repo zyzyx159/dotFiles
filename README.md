@@ -9,6 +9,8 @@ This is my personal collection of settings for my PCs.
   1. in terminal run '$profile'
   2. Put the files there
   3. New-Item -ItemType SymbolicLink -Path $path -Target $target
+    1. $path = short cut
+    2. $target = git folder, the actual file
 
 ## Linux Notes:
 - Lunarvim = ~/.config/lvim/config.lua 
