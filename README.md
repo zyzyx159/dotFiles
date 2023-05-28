@@ -20,7 +20,8 @@ This is my personal collection of settings for my PCs.
 ## Linux Notes:
 ### ln -s source_file symbolic_link
 
-- Lunarvim = ~/.config/lvim/config.lua 
-- Starship = ~/.config/starship.toml
-- Tmux = ~/.config/tmux/tmux.conf
-- Zsh = ~/.zshrc
+- Lunarvim = ln -s ~/git/dotFiles/lvim/config.lua ~/.config/lvim/config.lua 
+- Starship = ln -s ~/git/dotFiles/starship/starship.toml ~/.config/starship.toml
+- Tmux = ln -s ~/git/dotFiles/tmux/tmux.conf ~/.config/tmux/tmux.conf
+- Zsh = ln -s ~/git/dotFiles/zsh/.zshrc ~/.zshrc
+                                                        
