@@ -18,6 +18,8 @@ This is my personal collection of settings for my PCs.
    3. Target = git folder, the actual file
 
 ## Linux Notes:
+### ln -s source_file symbolic_link
+
 - Lunarvim = ~/.config/lvim/config.lua 
 - Starship = ~/.config/starship.toml
 - Tmux = ~/.config/tmux/tmux.conf
