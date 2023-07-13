@@ -1,6 +1,9 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
+#add $home/.local/bin to path
+export PATH=$PATH:$HOME/.local/bin
+
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="robbyrussell"
 
@@ -13,8 +16,8 @@ zstyle ':omz:update' mode auto      # update automatically without asking
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-	git
-	zsh-autosuggestions
+  git
+  zsh-autosuggestions
   zsh-autocomplete
 )
 
@@ -42,28 +45,28 @@ fi
 # set an icon based on the distro
 # make sure your font is compatible with https://github.com/lukas-w/font-logos
 case $_distro in
-    *kali*)                  ICON="ﴣ";;
-    *arch*)                  ICON="";;
-    *debian*)                ICON="";;
-    *raspbian*)              ICON="";;
-    *ubuntu*)                ICON="";;
-    *elementary*)            ICON="";;
-    *fedora*)                ICON="";;
-    *coreos*)                ICON="";;
-    *gentoo*)                ICON="";;
-    *mageia*)                ICON="";;
-    *centos*)                ICON="";;
-    *opensuse*|*tumbleweed*) ICON="";;
-    *sabayon*)               ICON="";;
-    *slackware*)             ICON="";;
-    *linuxmint*)             ICON="";;
     *alpine*)                ICON="";;
     *aosc*)                  ICON="";;
-    *nixos*)                 ICON="";;
+    *arch*)                  ICON="";;
+    *centos*)                ICON="";;
+    *coreos*)                ICON="";;
+    *debian*)                ICON="";;
     *devuan*)                ICON="";;
-    *manjaro*)               ICON="";;
-    *rhel*)                  ICON="";;
+    *elementary*)            ICON="";;
+    *fedora*)                ICON="";;
+    *gentoo*)                ICON="";;
+    *kali*)                  ICON="ﴣ";;
+    *linuxmint*)             ICON="";;
     *macos*)                 ICON="";;
+    *mageia*)                ICON="";;
+    *manjaro*)               ICON="";;
+    *nixos*)                 ICON="";;
+    *opensuse*|*tumbleweed*) ICON="";;
+    *raspbian*)              ICON="";;
+    *rhel*)                  ICON="";;
+    *sabayon*)               ICON="";;
+    *slackware*)             ICON="";;
+    *ubuntu*)                ICON="";;
     *)                       ICON="";;
 esac
 
