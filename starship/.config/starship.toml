@@ -22,7 +22,7 @@ format = '[$env_value](bright-cyan)'
 variable = "STARSHIP_DISTRO"
 disabled = false
 
-# Shows the usernamei
+# Shows the username
 [username]
 style_user = "white"
 style_root = "white"

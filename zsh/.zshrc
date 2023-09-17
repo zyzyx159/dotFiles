@@ -1,27 +1,24 @@
-# Path to your oh-my-zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
+#zinit
+ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
+[ ! -d $ZINIT_HOME ] && mkdir -p "$(dirname $ZINIT_HOME)"
+[ ! -d $ZINIT_HOME/.git ] && git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
+source "${ZINIT_HOME}/zinit.zsh"
+
+zinit load "zsh-users/zsh-autosuggestions"
+zinit load "zsh-users/zsh-completions"
+zinit load "marlonrichert/zsh-autocomplete"
 
 #add $home/.local/bin to path
 export PATH=$PATH:$HOME/.local/bin
 
-# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+# Custom environment variables
+# pass_zx2c4
+export PASSWORD_STORE_DIR="/media/RIP/pass"
 
-# Uncomment one of the following lines to change the auto-update behavior
-zstyle ':omz:update' mode auto      # update automatically without asking
-
-# Which plugins would you like to load?
-# Standard plugins can be found in $ZSH/plugins/
-# Custom plugins may be added to $ZSH_CUSTOM/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
-plugins=(
-  git
-  zsh-autosuggestions
-  zsh-autocomplete
-)
-
-source $ZSH/oh-my-zsh.sh
+# Custom aliases
+alias ll="ls -alF"
+alias awaken="bash ~/git/dotFiles/scripts/awaken.sh"
+alias peace="bash ~/git/dotFiles/scripts/peace.sh"
 
 #script for starship
 # find out which distribution we are running on
