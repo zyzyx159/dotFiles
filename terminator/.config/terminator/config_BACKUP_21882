@@ -9,8 +9,11 @@
 [profiles]
   [[default]]
     background_color = "#1e1e2e"
+<<<<<<< HEAD
     background_image = None
+=======
     cursor_color = "#f5e0dc"
+>>>>>>> d5686c07cfea65be94be00fa78e1aee12ef5478e
     font = CaskaydiaCove Nerd Font 11
     foreground_color = "#cdd6f4"
     scrollback_infinite = True

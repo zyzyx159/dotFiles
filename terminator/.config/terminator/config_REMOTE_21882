@@ -9,7 +9,6 @@
 [profiles]
   [[default]]
     background_color = "#1e1e2e"
-    background_image = None
     cursor_color = "#f5e0dc"
     font = CaskaydiaCove Nerd Font 11
     foreground_color = "#cdd6f4"
@@ -20,6 +19,7 @@
     custom_command = /bin/zsh
     use_system_font = False
     copy_on_selection = True
+    background_image = None
 [layouts]
   [[default]]
     [[[window0]]]
