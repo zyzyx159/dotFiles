@@ -1,7 +1,7 @@
 #!/bin/bash
 
-tomb="RIP.tomb"
-tombKey="RIP.tomb.key"
+tomb="~/RIP.tomb"
+tombKey="~/RIP.tomb.key"
 passLocation="ssh/zyzyx"
 sshKeyLocation="/media/RIP/ssh/zyzyx"
 

@@ -9,17 +9,16 @@
 [profiles]
   [[default]]
     background_color = "#1e1e2e"
-    cursor_color = "#f5e0dc"    
-    foreground_color = "#cdd6f4"
+    background_image = None
     font = CaskaydiaCove Nerd Font 11
-    palette = "#45475a:#f38ba8:#a6e3a1:#f9e2af:#89b4fa:#f5c2e7:#94e2d5:#bac2de:#585b70:#f38ba8:#a6e3a1:#f9e2af:#89b4fa:#f5c2e7:#94e2d5:#a6adc8"
+    foreground_color = "#cdd6f4"
     scrollback_infinite = True
     exit_action = hold
+    palette = "#45475a:#f38ba8:#a6e3a1:#f9e2af:#89b4fa:#f5c2e7:#94e2d5:#bac2de:#585b70:#f38ba8:#a6e3a1:#f9e2af:#89b4fa:#f5c2e7:#94e2d5:#a6adc8"
     use_custom_command = True
     custom_command = /bin/zsh
     use_system_font = False
     copy_on_selection = True
-    background_image = None
 [layouts]
   [[default]]
     [[[window0]]]

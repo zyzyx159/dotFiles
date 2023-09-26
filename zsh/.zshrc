@@ -16,7 +16,8 @@ export PATH=$PATH:$HOME/.local/bin
 export PASSWORD_STORE_DIR="/media/RIP/pass"
 
 # Custom aliases
-alias ll="ls -alF"
+alias ls="lsd"
+alias ll="lsd -alF"
 alias awaken="bash ~/git/dotFiles/scripts/awaken.sh"
 alias peace="bash ~/git/dotFiles/scripts/peace.sh"
 
