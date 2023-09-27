@@ -10,7 +10,6 @@
   [[default]]
     background_color = "#1e1e2e"
     background_image = None
-    cursor_color = "#f5e0dc"
     font = CaskaydiaCove Nerd Font 11
     foreground_color = "#cdd6f4"
     scrollback_infinite = True
