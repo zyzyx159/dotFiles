@@ -2,9 +2,6 @@
 [user]
 	name = Daniel Stellmon
 	email = Dstellm@gmail.com
-# Please adapt and uncomment the following lines:
-#	name = Daniel Stellmon
-#	email = Dstellm@gmail.com
 [merge]
 	tool = nvimdiff
 	conflictstyle = diff3
