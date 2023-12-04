@@ -12,7 +12,6 @@ zinit load "marlonrichert/zsh-autocomplete"
 export PATH=$PATH:$HOME/.local/bin
 
 # Custom environment variables
-# pass_zx2c4
 export PASSWORD_STORE_DIR="/media/RIP/pass"
 
 # Custom aliases
@@ -20,6 +19,10 @@ alias ls="lsd"
 alias ll="lsd -alF"
 alias awaken="bash ~/.config/custScripts/awaken.sh"
 alias peace="bash ~/.config/custScripts/peace.sh"
+
+alias zvim="NVIM_APPNAME=nvim-lazy nvim"
+alias kvim="NVIM_APPNAME=nvim-kickstart nvim"
+alias wvim="NVIM_APPNAME=nvim-writing nvim"
 
 #script for starship
 # find out which distribution we are running on
