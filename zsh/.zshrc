@@ -14,6 +14,10 @@ export PATH=$PATH:$HOME/.local/bin
 # Custom environment variables
 export PASSWORD_STORE_DIR="/media/RIP/pass"
 
+# for perl
+LC_CTYPE=en_US.UTF-8
+LC_ALL=en_US.UTF-8
+
 # Custom aliases
 alias ls="lsd"
 alias ll="lsd -alF"
