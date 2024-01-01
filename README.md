@@ -20,8 +20,13 @@ This is my personal collection of settings for my PCs.
 ## Linux Notes:
 ### ln -s source_file symbolic_link
 
-- Lunarvim = ln -s ~/git/dotFiles/lvim/config.lua ~/.config/lvim/config.lua 
+- Kitty = ln -s ~/git/dotFiles/kitty/ ~/.config/kitty/
+- Nvim-programing = ln -s ~/git/dotFiles/nvim-programing/ ~/.config/nvim/
+- Nvim-writing = ln -s ~/git/dotFiles/nvim-writing/ ~/.config/nvim-writing/
+- Custom Scripts = ln -s ~/git/dotFiles/scripts/ ~.config/custScripts/ 
 - Starship = ln -s ~/git/dotFiles/starship/starship.toml ~/.config/starship.toml
-- Tmux = ln -s ~/git/dotFiles/tmux/tmux.conf ~/.config/tmux/tmux.conf
+- Terminator = ln -s ~/git/dotFiles/terminator ~/.config/terminator/
+- Tmux = ln -s ~/git/dotFiles/tmux/ ~/.config/tmux/
 - Zsh = ln -s ~/git/dotFiles/zsh/.zshrc ~/.zshrc
+
                                                         
