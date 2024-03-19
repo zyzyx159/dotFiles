@@ -28,6 +28,10 @@ alias zvim="NVIM_APPNAME=nvim-lazy nvim"
 alias kvim="NVIM_APPNAME=nvim-kickstart nvim"
 alias wvim="NVIM_APPNAME=nvim-writing nvim"
 
+if test "$TERM" = "xterm-kitty"
+  alias ssh="kitty +kitten ssh"
+end
+
 #script for starship
 # find out which distribution we are running on
 LFILE="/etc/os-release"
