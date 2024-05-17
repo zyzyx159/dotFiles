@@ -4,9 +4,28 @@ ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 [ ! -d $ZINIT_HOME/.git ] && git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
 source "${ZINIT_HOME}/zinit.zsh"
 
+zinit light zsh-users/zsh-syntax-highlighting
 zinit load "zsh-users/zsh-autosuggestions"
 zinit load "zsh-users/zsh-completions"
 zinit load "marlonrichert/zsh-autocomplete"
+
+autoload -U compinit && compinit
+
+# History
+HISTSIZE=50000
+HISTFILE=~/.zsh_history
+SACEHIST=$HISTSIZE
+HISTDUP=erase
+setopt appendhistory
+setopt sharehistory
+setopt hist_ignore_space
+setopt hist_ignore_all_dups
+setopt hist_save_no_dups
+setopt hist_ignore_all_dups
+setopt hist_find_no_dups
+
+# completion styling
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 
 #add $home/.local/bin to path
 export PATH=$PATH:$HOME/.local/bin
