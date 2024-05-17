@@ -1,11 +1,13 @@
 #!/bin/bash
 
-tomb="RIP.tomb"
-tombKey="RIP.tomb.key"
+tomb="/home/zyzyx/RIP.tomb"
+tombKey="/home/zyzyx/RIP.tomb.key"
 passLocation="ssh/zyzyx"
 sshKeyLocation="/media/RIP/ssh/zyzyx"
 
-tomb open $tomb -k $tombKey -f
+sudo swapoff -a
+
+tomb open $tomb -k $tombKey
 
 pass=$(pass show $passLocation)
 
@@ -15,3 +17,5 @@ expect <<EOF
   send "$pass\r"
   expect eof
 EOF
+
+sudo swapon -a
