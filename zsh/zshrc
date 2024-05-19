@@ -42,6 +42,7 @@ alias ls="lsd"
 alias ll="lsd -alF"
 alias awaken="bash ~/.config/custScripts/awaken.sh"
 alias peace="bash ~/.config/custScripts/peace.sh"
+alias ghpush="bash ~/.config/custScripts/GHPush.sh"
 
 alias zvim="NVIM_APPNAME=nvim-lazy nvim"
 alias kvim="NVIM_APPNAME=nvim-kickstart nvim"
