@@ -26,7 +26,6 @@ This is my personal collection of settings for my PCs.
 - Custom Scripts = ln -s ~/git/dotFiles/scripts/ ~.config/custScripts/ 
 - Starship = ln -s ~/git/dotFiles/starship/starship.toml ~/.config/starship.toml
 - Terminator = ln -s ~/git/dotFiles/terminator ~/.config/terminator/
-    - Kitty is now default, not sure if I wan to keep this one
 - Tmux = ln -s ~/git/dotFiles/tmux/ ~/.config/tmux/
 - Zsh = ln -s ~/git/dotFiles/zsh/.zshrc ~/.zshrc
 - SSH config = cp ~/git/dotFiles/ssh/sshd_config /etc/ssh/sshd_config
