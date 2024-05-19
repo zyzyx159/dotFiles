@@ -6,5 +6,5 @@ rm -r ~/.config/nvim-writing/ #archive
 rm -r ~/.config/custScripts/ # remove folder
 rm ~/.config/starship.toml 
 rm -r ~/.config/terminator/
-rm -r~/.config/tmux/
+rm -r ~/.config/tmux/
 rm ~/.gitconig
