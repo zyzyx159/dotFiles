@@ -43,6 +43,7 @@ alias ll="lsd -alF"
 alias awaken="bash ~/.config/custScripts/awaken.sh"
 alias peace="bash ~/.config/custScripts/peace.sh"
 alias ghpush="bash ~/.config/custScripts/GHPush.sh"
+alias fetch="fastfetch" #whatever version of fetch I am using right now
 
 alias zvim="NVIM_APPNAME=nvim-lazy nvim"
 alias kvim="NVIM_APPNAME=nvim-kickstart nvim"
