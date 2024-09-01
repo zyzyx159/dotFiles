@@ -3,7 +3,7 @@
 	name = Daniel Stellmon
 	email = Dstellm@gmail.com
 [merge]
-	tool = nvimdiff
+	tool = codium
 	conflictstyle = diff3
 	prompt = false
 [url "ssh://git@github.com/"]
