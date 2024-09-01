@@ -45,10 +45,6 @@ alias peace="bash ~/.config/custScripts/peace.sh"
 alias ghpush="bash ~/.config/custScripts/GHPush.sh"
 alias fetch="fastfetch" #whatever version of fetch I am using right now
 
-alias zvim="NVIM_APPNAME=nvim-lazy nvim"
-alias kvim="NVIM_APPNAME=nvim-kickstart nvim"
-alias wvim="NVIM_APPNAME=nvim-writing nvim"
-
 #script for starship
 # find out which distribution we are running on
 LFILE="/etc/os-release"
