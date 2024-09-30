@@ -96,3 +96,5 @@ export STARSHIP_DISTRO="$ICON"
 export STARSHIP_DEVICE="$DEVICE"
 
 eval "$(starship init zsh)"
+
+fetch
