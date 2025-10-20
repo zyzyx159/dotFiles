@@ -37,6 +37,7 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-review 'ls --color $realpath'
 
 #add $home/.local/bin, cargo, and Ruby to path
 export PATH=$PATH:$HOME/.local/bin:/home/zyzyx/.cargo/bin:/home/zyzyx/.local/share/gem/ruby/3.2.0/bin
+export PATH="$PATH:$HOME/.fzf/bin"
 
 # Custom environment variables
 export PASSWORD_STORE_DIR="/media/RIP/pass"
@@ -103,10 +104,12 @@ esac
 export STARSHIP_DISTRO="$ICON"
 export STARSHIP_DEVICE="$DEVICE"
 
-source ~/.fzf.zsh
 eval "$(starship init zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 
 fetch
+
+#[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source <(fzf --zsh)
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
