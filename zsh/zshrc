@@ -9,6 +9,9 @@ zinit load "zsh-users/zsh-autosuggestions"
 zinit load "zsh-users/zsh-completions"
 zinit load "marlonrichert/zsh-autocomplete"
 
+zinit ice from"gh-r" as"program" pick"pyautoenv.plugin.zsh"
+zinit load hsaunders1904/pyautoenv
+
 autoload -U compinit && compinit
 
 # History
@@ -27,8 +30,8 @@ setopt hist_find_no_dups
 # completion styling
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 
-#add $home/.local/bin to path
-export PATH=$PATH:$HOME/.local/bin
+#add $home/.local/bin, cargo, and Ruby to path
+export PATH=$PATH:$HOME/.local/bin:/home/zyzyx/.cargo/bin:/home/zyzyx/.local/share/gem/ruby/3.2.0/bin
 
 # Custom environment variables
 export PASSWORD_STORE_DIR="/media/RIP/pass"
