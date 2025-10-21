@@ -1,3 +1,5 @@
 /powershell
 /Archive
-*.sh
+README.md
+.git
+/ssh
