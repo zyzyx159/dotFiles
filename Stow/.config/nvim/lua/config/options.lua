@@ -10,6 +10,7 @@ vim.opt.cursorline = true -- Highlight current line
 vim.opt.scrolloff = 10 -- Keep 10 lines above/below cursor
 vim.opt.sidescrolloff = 8 -- Keep 8 columns left/right of cursor
 vim.opt.wrap = true -- Wrap lines
+vim.opt.linebreak = true -- When wraping lines don't break words
 vim.opt.cmdheight = 1 -- Command line height
 vim.opt.spelllang = { "en" } -- Set language for spellchecking
 
@@ -32,7 +33,7 @@ vim.opt.incsearch = true -- Show matches as you type
 -- Visual Settings
 vim.opt.termguicolors = true -- Enable 24-bit colors
 vim.opt.signcolumn = "yes" -- Always show sign column
-vim.opt.colorcolumn = "100" -- Show column at 100 characters
+--vim.opt.colorcolumn = "100" -- Show column at 100 characters
 vim.opt.showmatch = true -- Highlight matching brackets
 vim.opt.matchtime = 2 -- How long to show matching bracket
 vim.opt.completeopt = "menuone,noinsert,noselect" -- Completion options
