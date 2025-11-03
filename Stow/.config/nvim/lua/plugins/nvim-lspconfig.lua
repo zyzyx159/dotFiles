@@ -59,14 +59,14 @@ local config = function()
 	})
 
 	-- typescript
-	lspconfig.tsserver.setup({
-		on_attach = on_attach,
-		capabilities = capabilities,
-		filetypes = {
-			"typescript",
-		},
-		root_dir = lspconfig.util.root_pattern("package.json", "tsconfig.json", ".git"),
-	})
+--	lspconfig.tsserver.setup({
+--		on_attach = on_attach,
+--		capabilities = capabilities,
+--		filetypes = {
+--			"typescript",
+--		},
+--		root_dir = lspconfig.util.root_pattern("package.json", "tsconfig.json", ".git"),
+--	})
 
 	-- bash
 	lspconfig.bashls.setup({
