@@ -1,15 +1,15 @@
 -- ================================================================================================
--- TITLE : melange-nvim
--- ABOUT : A subtle, warm colorscheme for Neovim inspired by Sublime Text's Melange theme.
+-- TITLE : catppuccin-nvim
+-- ABOUT : Soothing pastel theme for the high-spirited!
 -- LINKS :
---   > github : https://github.com/savq/melange-nvim
+--   > github : https://github.com/catppuccin/nvim
 -- ================================================================================================
 
 return {
-	"savq/melange-nvim",
+	"catppuccin/nvim",
 	lazy = false,
 	priority = 1000,
 	config = function()
-		vim.cmd("colorscheme melange")
+		vim.cmd("colorscheme catppuccin-mocha")
 	end,
 }
