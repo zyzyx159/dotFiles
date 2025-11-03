@@ -1,8 +1,8 @@
 local opts = {
 	ensure_installed = {
-		"efm",
+		"efm", -- general LSP
 		"bashls",
-		"tsserver",
+		"ts_ls",
 		"solidity",
 		"tailwindcss",
 		"pyright",
