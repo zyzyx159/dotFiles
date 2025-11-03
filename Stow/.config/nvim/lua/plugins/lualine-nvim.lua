@@ -1,21 +1,24 @@
--- ================================================================================================
--- TITLE : lualine.nvim
--- LINKS :
---   > github : https://github.com/nvim-lualine/lualine.nvim
--- ABOUT : A blazing fast and easy to configure Neovim statusline written in Lua.
--- ================================================================================================
+local config = function()
+	require("lualine").setup({
+		options = {
+			theme = "auto",
+			globalstatus = true,
+			component_separators = { left = "|", right = "|" },
+			section_separators = { left = "", right = "" },
+		},
+		sections = {
+			lualine_a = { "mode" },
+			lualine_b = { "buffers" },
+			lualine_x = { "encoding", "fileformat", "filetype" },
+			lualine_y = { "progress" },
+			lualine_z = { "location" },
+		},
+		tabline = {},
+	})
+end
 
 return {
 	"nvim-lualine/lualine.nvim",
-	config = function()
-		require("lualine").setup({
-			options = {
-				theme = "melange",
-				icons_enabled = true,
-				section_separators = { left = "", right = "" },
-				component_separators = "|",
-			},
-		})
-	end,
-	dependencies = { "nvim-tree/nvim-web-devicons" },
+	lazy = false,
+	config = config,
 }
