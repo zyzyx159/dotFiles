@@ -12,7 +12,8 @@ vim.opt.sidescrolloff = 8 -- Keep 8 columns left/right of cursor
 vim.opt.linebreak = true -- Don't break words with wrap
 vim.opt.wrap = true -- Do wrap lines
 vim.opt.cmdheight = 1 -- Command line height
-vim.opt.spelllang = { "en", "de" } -- Set language for spellchecking
+vim.opt.spelllang = { "en" } -- Set language for spellchecking
+vim.opt.spell = true -- Turn on spell check
 
 -- Tabbing / Indentation
 vim.opt.tabstop = 2 -- Tab width
