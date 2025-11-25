@@ -35,10 +35,11 @@ zstyle ':completion:*' menu no
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-review 'ls --color $realpath'
 
-#add $home/.local/bin, cargo, and Ruby to path
+#add $home/.local/bin, cargo, go, and Ruby to path
 export PATH=$PATH:$HOME/.local/bin:/home/zyzyx/.cargo/bin:/home/zyzyx/.local/share/gem/ruby/3.2.0/bin
 export PATH="$PATH:$HOME/.fzf/bin"
 export PATH="$PATH:$HOME/.cargo/env"
+export PATH="$PATH:$HOME/go/bin"
 
 # Custom environment variables
 export PASSWORD_STORE_DIR="/media/RIP/pass"
