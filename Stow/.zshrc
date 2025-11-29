@@ -7,11 +7,7 @@ source "${ZINIT_HOME}/zinit.zsh"
 zinit load "zsh-users/zsh-syntax-highlighting"
 zinit load "zsh-users/zsh-autosuggestions"
 zinit load "zsh-users/zsh-completions"
-# zinit load "marlonrichert/zsh-autocomplete"
 zinit light Aloxaf/fzf-tab
-
-zinit ice from"gh-r" as"program" pick"pyautoenv.plugin.zsh"
-zinit load hsaunders1904/pyautoenv
 
 autoload -U compinit && compinit
 
