@@ -55,6 +55,7 @@ alias awaken="bash ~/.config/custScripts/awaken.sh"
 alias peace="bash ~/.config/custScripts/peace.sh"
 alias ghpush="bash ~/.config/custScripts/GHPush.sh"
 alias fetch="fastfetch" #whatever version of fetch I am using right now
+alias lz="lazygit"
 
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
