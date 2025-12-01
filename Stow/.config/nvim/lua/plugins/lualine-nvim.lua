@@ -15,6 +15,9 @@ return {
 				section_separators = { left = "", right = "" },
 				component_separators = "|",
 			},
+      tabline = {
+        lualine_a = {'buffers'}
+      }
 		})
 	end,
 	dependencies = { "nvim-tree/nvim-web-devicons" },
