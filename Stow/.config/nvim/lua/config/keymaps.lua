@@ -44,6 +44,9 @@ vim.keymap.set("n", "<leader>e", "<Cmd>NvimTreeToggle<CR>", { desc = "Toggle Fil
 -- Insert mode move one character to the right by default
 vim.keymap.set("n", "i", "a", { noremap = true, silent = true })
 
+-- word count for creative writing
+vim.keymap.set('n', '<leader>wc', '<cmd>echo "Words: " .. wordcount().words<CR>', { silent = true })
+
 -- lazy git
 vim.keymap.set("n", "lg", function()
 	vim.cmd("LazyGit")

@@ -10,6 +10,12 @@ return {
 	lazy = false,
 	priority = 1000,
 	config = function()
+    require("catppuccin").setup({
+      flavour = "mocha",
+      integrations = {
+        notify = true, -- Enable notify integrations
+      },
+    })
 		vim.cmd("colorscheme catppuccin-mocha")
 	end,
 }
