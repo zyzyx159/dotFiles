@@ -93,9 +93,9 @@ case $_distro in
     *elementary*)            ICON="";;
     *fedora*)                ICON="";;
     *gentoo*)                ICON="";;
-    *kali*)                  ICON="ﴣ";;
+    *kali*)                  ICON="";;
     *linuxmint*)             ICON="";;
-    *macos*)                 ICON="";;
+    *macos*)                 ICON="";;
     *mageia*)                ICON="";;
     *manjaro*)               ICON="";;
     *nixos*)                 ICON="";;
@@ -105,6 +105,7 @@ case $_distro in
     *sabayon*)               ICON="";;
     *slackware*)             ICON="";;
     *ubuntu*)                ICON="";;
+    *void*)                  ICON="";;
     *)                       ICON="";;
 esac
 
