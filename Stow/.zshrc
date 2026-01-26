@@ -114,6 +114,14 @@ export STARSHIP_DEVICE="$DEVICE"
 eval "$(starship init zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 
+# home
+bindkey '\e[H' Beginning-of-line
+bindkey '\eOH' Beginning-of-line
+
+# End
+bindkey '\e[F' end-of-line
+bindkey '\eOF' end-of-line
+
 fetch
 
 #[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
