@@ -52,6 +52,7 @@ alias peace="bash ~/.config/custScripts/peace.sh"
 alias ghpush="bash ~/.config/custScripts/GHPush.sh"
 alias fetch="fastfetch" #whatever version of fetch I am using right now
 alias lz="lazygit"
+alias vi="nvim"
 
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
@@ -116,6 +117,10 @@ eval "$(starship init zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 
 fetch
+
+# Stuff for sway to make ask-pass work
+export SSH_ASKPASS='/usr/local/bin/yad-ssh-askpass'
+export DISPLAY=:0  # Dummy value to trick SSH into using the graphical prompt
 
 #[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 source <(fzf --zsh)
