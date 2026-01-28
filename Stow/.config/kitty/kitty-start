@@ -1,6 +1,6 @@
 # First window: launch tmux session (active by default)
-launch --title tmux-session tmux a -t local
+launch --title "tmux" tmux
 
 # Second window: default shell
 new_tab
-launch --title default-shell   
+launch --title "default"
