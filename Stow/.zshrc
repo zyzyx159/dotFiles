@@ -9,6 +9,7 @@ zinit load "zsh-users/zsh-autosuggestions"
 zinit load "zsh-users/zsh-completions"
 zinit light Aloxaf/fzf-tab
 
+# initialize Zsh's completion system
 autoload -U compinit && compinit
 
 # History
@@ -124,13 +125,21 @@ bindkey '\eOH' Beginning-of-line
 bindkey '\e[F' end-of-line
 bindkey '\eOF' end-of-line
 
+# Run fetch
 fetch
+
+# Autoload ssh key based on host name
+case "$HOST" in
+  "Walker")
+    ssh-add ~/.ssh/zyzyx@walker 2>/dev/null || true
+    ;;
+  # Add other entries if you install Void on other PCs
+esac
 
 # Stuff for sway to make ask-pass work
 export SSH_ASKPASS='/usr/local/bin/yad-ssh-askpass'
 export DISPLAY=:0  # Dummy value to trick SSH into using the graphical prompt
 
-#[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 source <(fzf --zsh)
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
