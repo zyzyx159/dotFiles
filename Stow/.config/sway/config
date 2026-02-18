@@ -23,7 +23,7 @@ set $menu wofi --gtk-dark
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 #output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
-output * bg /home/zyzyx/Downloads/void-wallpapers.jpg fill
+output * bg /home/zyzyx/WallPaper/Calvin_Hobbes_wallpaper.jpg fill #000000
 #
 # Example configuration:
 #
