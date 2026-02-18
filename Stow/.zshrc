@@ -38,6 +38,11 @@ export PATH="$PATH:$HOME/.fzf/bin"
 export PATH="$PATH:$HOME/.cargo/env"
 export PATH="$PATH:$HOME/go/bin"
 
+# environment variables
+export EDITOR=nvim
+export VISUAL=nvim
+export SUDO_EDITOR=nvim
+
 # Custom environment variables
 export PASSWORD_STORE_DIR="/media/RIP/pass"
 
