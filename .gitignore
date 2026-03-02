@@ -1,1 +1,2 @@
-/Stow/.config/tmux/plugins
+# Ignore the contents of the tmux plugins directory
+dot-config/tmux/plugins/
