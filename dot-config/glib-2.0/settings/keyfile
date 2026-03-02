@@ -1,0 +1,29 @@
+[org/gtk/settings/file-chooser]
+window-position=(26, 23)
+window-size=(1231, 902)
+date-format='regular'
+location-mode='path-bar'
+show-hidden=false
+show-size-column=true
+show-type-column=true
+sidebar-width=163
+sort-column='name'
+sort-directories-first=false
+sort-order='ascending'
+type-format='category'
+
+[org/xfce/mousepad/state/application]
+session=['1;;+file:///home/zyzyx/AppImages/DesktopFiles/Discord.desktop']
+
+[org/xfce/mousepad/state/window]
+width=636
+height=1021
+maximized=false
+fullscreen=false
+
+[org/blueman/general]
+window-properties=[956, 1021, 0, 0]
+last-adapter='hci0'
+
+[org/blueman/plugins/recentconns]
+recent-connections=[{'adapter': '14:F6:D8:B7:B5:1E', 'address': '63:06:89:EE:56:1A', 'alias': 'A12', 'icon': 'audio-headset', 'name': 'Audio and input profiles', 'uuid': '00000000-0000-0000-0000-000000000000', 'time': '1772430657.6570263'}]
