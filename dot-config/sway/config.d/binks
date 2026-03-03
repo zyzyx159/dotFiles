@@ -1,0 +1,5 @@
+#
+### Output configuration
+#
+output * bg /home/zyzyx/WallPaper/DevilWorkShop.jpg fill #000000
+
