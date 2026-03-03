@@ -1,1 +1,0 @@
-1772018882642	SessionStore.LogManager	ERROR	Failed to copy log stream to file: UnknownError: Could not create directory `/home/zyzyx/.config/mozilla/firefox/mityty0v.default-default/sessionstore-logs' (NS_ERROR_FAILURE) No traceback available

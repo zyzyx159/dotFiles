@@ -1,0 +1,7 @@
+#
+### Output configuration
+#
+
+output * bg /home/zyzyx/WallPaper/Calvin_Hobbes_wallpaper.jpg fill #000000
+
+

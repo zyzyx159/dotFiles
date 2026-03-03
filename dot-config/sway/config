@@ -17,13 +17,6 @@ set $term kitty
 # Your preferred application launcher
 set $menu wofi --gtk-dark
 
-
-### Output configuration
-#
-# Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-#output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
-output * bg /home/zyzyx/WallPaper/DevilWorkShop.jpg fill #000000
-
 #
 # Custom Tmux prefix mode
 #
@@ -92,7 +85,6 @@ bindsym $mod+l exec swaylock -c 000000
 bar {
     swaybar_command waybar
  }
-}
 
 #
 # network manager
@@ -113,10 +105,6 @@ exec /usr/libexec/xdg-desktop-portal-wlr
 set $xcursor_theme Adwaita
 set $xcursor_size 24
 seat seat0 xcursor_theme $xcursor_theme $xcursor_size
-
-#
-# ssh-ask-pass
-#
 
 #
 # start Devmon for automount USB
@@ -140,3 +128,4 @@ include /etc/sway/config.d/*
 #
 exec /usr/libexec/polkit-gnome-authentication-agent-1
 
+include config.d/$(hostname)
