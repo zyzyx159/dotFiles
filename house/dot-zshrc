@@ -9,6 +9,17 @@ zinit load "zsh-users/zsh-autosuggestions"
 zinit load "zsh-users/zsh-completions"
 zinit light Aloxaf/fzf-tab
 
+# pulseaudio, pipewire, wireplumber
+# Export the runtime dir if it exists
+if [ -d "/run/user/$(id -u)" ]; then
+    export XDG_RUNTIME_DIR="/run/user/$(id -u)"
+fi
+
+# Ensure a D-Bus session is started and exported
+if [ -z "$DBUS_SESSION_BUS_ADDRESS" ]; then
+    eval $(dbus-launch --sh-syntax --exit-with-session)
+fi
+
 # initialize Zsh's completion system
 autoload -U compinit && compinit
 
@@ -132,6 +143,9 @@ bindkey '\eOF' end-of-line
 
 # Run fetch
 fetch
+
+# load keychain and sshkey
+eval `keychain --eval $USER@HOST`
 
 # Autoload ssh key based on host name
 case "$HOST" in
