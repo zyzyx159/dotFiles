@@ -38,7 +38,7 @@ mkdir -p "$CONFIG_DEST"
 # Loop through contents of 'dot-config' and link them into '$HOME/.config/'
 for config_item in "$CONFIG_SOURCE"/*; do
     item_name=$(basename "$config_item")
-    
+
     echo "Linking config: $CONFIG_DEST/$item_name -> $config_item"
     ln -s "$config_item" "$CONFIG_DEST/$item_name"
 done

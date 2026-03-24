@@ -8,7 +8,7 @@ shopt -s nullglob
 
 for file_path in "$TARGET"/*; do
     if [ -f "$file_path" ]; then
-        
+
         # 1. Get the original filename (e.g., dot-bashrc)
         original_name=$(basename "$file_path")
 

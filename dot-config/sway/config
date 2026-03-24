@@ -78,14 +78,6 @@ bindsym $mod+l exec swaylock -c 000000
     bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
     # Special key to take a screenshot with grim
     bindsym Print exec grim
-
-#
-# Status Bar:
-#
-bar {
-    swaybar_command waybar
- }
-
 #
 # network manager
 #
@@ -94,10 +86,14 @@ exec --no-startup-id 'nm-applet --indicator'
 #
 # enable Sound
 #
-exec pipewire
-exec pipewire-pulse
-exec wireplumber
-exec /usr/libexec/xdg-desktop-portal-wlr
+exec pipewire -c pipewire.conf
+
+#
+# Status Bar:
+#
+bar {
+    swaybar_command waybar
+}
 
 #
 # Cursor
