@@ -12,3 +12,8 @@ else
 fi
 
 export SSH_AUTH_SOCK SSH_AGENT_PID
+
+# Start Sway
+if [[ -z "$DISPLAY" ]] && [[ "$(tty)" == "/dev/tty1" ]]; then
+	exec dbus-run-session sway
+fi 
