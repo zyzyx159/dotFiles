@@ -43,7 +43,7 @@ zstyle ':completion:*' menu no
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-review 'ls --color $realpath'
 
-#add $home/.local/bin, cargo, go, and Ruby to path
+# add $home/.local/bin, cargo, go, and Ruby to path
 export PATH=$PATH:$HOME/.local/bin:/home/zyzyx/.cargo/bin:/home/zyzyx/.local/share/gem/ruby/3.2.0/bin
 export PATH="$PATH:$HOME/.fzf/bin"
 export PATH="$PATH:$HOME/.cargo/env"
@@ -54,14 +54,10 @@ export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init --path)"
 eval "$(pyenv virtualenv-init -)"
 
-
 # environment variables
 export EDITOR=nvim
 export VISUAL=nvim
 export SUDO_EDITOR=nvim
-
-# Custom environment variables
-export PASSWORD_STORE_DIR="/media/RIP/pass"
 
 # for perl
 LC_CTYPE=en_US.UTF-8
@@ -70,20 +66,10 @@ LC_ALL=en_US.UTF-8
 # Custom aliases
 alias ls="lsd"
 alias ll="lsd -alF"
-alias awaken="bash ~/.config/custScripts/awaken.sh"
-alias peace="bash ~/.config/custScripts/peace.sh"
 alias ghpush="bash ~/.config/custScripts/GHPush.sh"
 alias fetch="fastfetch" #whatever version of fetch I am using right now
 alias lz="lazygit"
 alias vi="nvim"
-
-function y() {
-	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
-	yazi "$@" --cwd-file="$tmp"
-	IFS= read -r -d '' cwd < "$tmp"
-	[ -n "$cwd" ] && [ "$cwd" != "$PWD" ] && builtin cd -- "$cwd"
-	rm -f -- "$tmp"
-}
 
 #script for starship
 # find out which distribution we are running on
@@ -136,8 +122,18 @@ esac
 export STARSHIP_DISTRO="$ICON"
 export STARSHIP_DEVICE="$DEVICE"
 
+# custom command to open files and folder in their default GUI apps from terminal.
+open() {
+  if [ $# -eq 0 ]; then
+    xdg-open . > /dev/null 2>&1 & disown
+  else
+    xdg-open "$@" > /dev/null 2>&1 & disown
+  fi
+}
+
+# start starship and zoxide
 eval "$(starship init zsh)"
-eval "$(zoxide init --cmd cd zsh)"
+eval "$(zoxide init --cmd cd zsh)" # lets you jump to frequently used directories.
 
 # home
 bindkey '\e[H' Beginning-of-line
