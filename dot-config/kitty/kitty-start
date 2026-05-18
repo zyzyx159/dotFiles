@@ -3,4 +3,4 @@ launch --title "tmux" tmux
 
 # Second window: default shell
 new_tab
-launch --title "default"
+launch zsh
