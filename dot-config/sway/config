@@ -28,7 +28,7 @@ set $menu wofi --gtk-dark
     bindsym BackSpace kill; mode "default"
 
     # Launch Wofi ($menu)
-    bindsym w exec $menu; mode "default"
+    bindsym --release Super_L exec $menu; mode "default"
 
     # Switch to workspace
     bindsym 1 workspace number 1; mode "default"
@@ -54,11 +54,29 @@ set $menu wofi --gtk-dark
     bindsym Shift+0 move container to workspace number 10; mode "default"
     # Note: workspaces can have any name you want, not just numbers.
     # We just use 1-10 as the default.
-#
+
+    #exit tmux mode without doing anything
+    bindsym Escape mode "default"
  }
 
 # Bind Ctrl-s to enter the "tmux" node
-bindsym Control+s mode "tmux"
+bindsym --release Super_L mode "tmux"
+
+#
+# power managment mode
+#
+set $mode_power (l)ock, (e)xit, (r)eboot, (s)hutdown
+
+mode "$mode_power" {
+    bindsym l exec swaylock, mode "default"
+    bindsym e exec swaymsg exit, mode "default"
+    bindsym r exec reboot, mode "default"
+    bindsym s exec shutdown -p now, mode "default"
+
+    # Retrun to default mode, AKA cancel
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+  }
 
 #
 # screen lock
@@ -123,5 +141,10 @@ include /etc/sway/config.d/*
 #   This rule allows me to run Gparted
 #
 exec /usr/libexec/polkit-gnome-authentication-agent-1
+
+#
+# Reload sway config
+#
+bindsym Mod4+Shift+c Reload
 
 include config.d/$(hostname)
