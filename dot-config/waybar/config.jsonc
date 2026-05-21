@@ -104,7 +104,7 @@
     },
     "tray": {
         // "icon-size": 21,
-        "spacing": 10,
+        "spacing": 10
         // "icons": {
         //   "blueman": "bluetooth",
         //   "TelegramDesktop": "$HOME/.local/share/icons/hicolor/16x16/apps/telegram.png"
@@ -152,9 +152,6 @@
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
         "format-icons": ["", "", "", "", ""]
-    }//,
-    //"battery#bat1": {
-    //    "bat": "BAT2"
     },
     "power-profiles-daemon": {
       "format": "{icon}",
@@ -210,6 +207,6 @@
     "custom/power": {
       "format" : "⏻ ",
 		  "tooltip": false,
-      "on-click": "swaymsg mode \"power\""
+      "on-click": "swaymsg mode 'power'"
     }
 }

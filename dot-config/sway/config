@@ -67,7 +67,7 @@ bindsym --release Super_L mode "tmux"
 #
 set $mode_power (l)ock, (e)xit, (r)eboot, (s)hutdown
 
-mode "$mode_power" {
+mode "power" {
     bindsym l exec swaylock, mode "default"
     bindsym e exec swaymsg exit, mode "default"
     bindsym r exec reboot, mode "default"
@@ -107,13 +107,6 @@ exec --no-startup-id 'nm-applet --indicator'
 exec pipewire -c pipewire.conf
 
 #
-# Status Bar:
-#
-bar {
-    swaybar_command waybar
-}
-
-#
 # Cursor
 #
 set $xcursor_theme Adwaita
@@ -130,11 +123,12 @@ exec --no-startup-id devmon --no-gui
 #
 exec blueman-applet #BlueTooth manager
 exec swaync #Notification Deamon
+exec_always waybar
 
 # Float the SSH password prompt based on the title defined in the script
 for_window [title="SSH Authentication"] floating enable, resize set 400 150, move position center
 
-include /etc/sway/config.d/*
+include etc/sway/config.d/*
 
 #
 # Run polkit rules
