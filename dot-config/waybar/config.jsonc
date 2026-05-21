@@ -16,8 +16,8 @@
         "sway/window"
     ],
     "modules-right": [
-        "mpd",
-        "idle_inhibitor",
+    //    "mpd",
+    //    "idle_inhibitor",
         "pulseaudio",
     //    "network",
     //    "power-profiles-daemon",
@@ -28,7 +28,7 @@
     //    "keyboard-state",
     //    "sway/language",
         "battery",
-        "battery#bat2",
+        //"battery#bat2",
         "clock",
         "tray",
         "custom/power"
@@ -117,10 +117,13 @@
     },
     "cpu": {
         "format": "{usage}% ",
-        "tooltip": false
+        "tooltip": true,
+        "tooltip-format": "CPU {usage}% used"
     },
     "memory": {
-        "format": "{}% "
+        "format": "{}% ",
+        "tooltip": true,
+        "tooltip-format": "Memory {}% used"
     },
     "temperature": {
         // "thermal-zone": 2,
@@ -149,9 +152,9 @@
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
         "format-icons": ["", "", "", "", ""]
-    },
-    "battery#bat2": {
-        "bat": "BAT2"
+    }//,
+    //"battery#bat1": {
+    //    "bat": "BAT2"
     },
     "power-profiles-daemon": {
       "format": "{icon}",
@@ -205,15 +208,8 @@
         // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
     },
     "custom/power": {
-        "format" : "⏻ ",
-		"tooltip": false,
-		"menu": "on-click",
-		"menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
-		"menu-actions": {
-			"shutdown": "shutdown",
-			"reboot": "reboot",
-			"suspend": "systemctl suspend",
-			"hibernate": "systemctl hibernate"
-		}
+      "format" : "⏻ ",
+		  "tooltip": false,
+      "on-click": "swaymsg mode \"power\""
     }
 }
