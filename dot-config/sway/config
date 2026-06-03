@@ -1,6 +1,8 @@
 # Default config for sway
 
-exec dbus-update-activation-environment --all
+#exec dbus-update-activation-environment --all
+exec dbus-update-activation-environment DISPLAY WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway XDG_RUNTIME_DIR DBUS_SESSION_BUS_ADDRESS
+
 exec setxkbmap -query || true
 
 ### Variables
@@ -104,7 +106,7 @@ exec --no-startup-id 'nm-applet --indicator'
 #
 # enable Sound
 #
-exec pipewire -c pipewire.conf
+exec pipewire
 
 #
 # Cursor
@@ -121,9 +123,9 @@ exec --no-startup-id devmon --no-gui
 #
 # Start apps
 #
+exec sleep 2 && waybar
 exec blueman-applet #BlueTooth manager
 exec swaync #Notification Deamon
-exec_always waybar
 
 # Float the SSH password prompt based on the title defined in the script
 for_window [title="SSH Authentication"] floating enable, resize set 400 150, move position center
