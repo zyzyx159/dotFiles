@@ -50,9 +50,9 @@ export PATH="$PATH:$HOME/.cargo/env"
 export PATH="$PATH:$HOME/go/bin"
 
 #multiple version of Python
-export PATH="$HOME/.pyenv/bin:$PATH"
-eval "$(pyenv init --path)"
-eval "$(pyenv virtualenv-init -)"
+# export PATH="$HOME/.pyenv/bin:$PATH"
+# eval "$(pyenv init --path)"
+# eval "$(pyenv virtualenv-init -)"
 
 # environment variables
 export EDITOR=nvim

@@ -13,8 +13,8 @@
     "temperature",
     "battery",
     //  "network", //make this a template in chezmoi
-    "bluetooth",
-    "tray"
+    "bluetooth"
+    //  "tray"
     //  "custom/power"
   ],
   "sway/mode": {
