@@ -109,5 +109,6 @@
     "tooltip-format-enumerate-connected": " {device_alias}\t{device_address}",
     "on-click": "blueman-manager" // Opens the manager GUI on click
     // right click the blueman-manager icon > plugins > disable "StatusIcon"
+      // or just disable the tray....
   }
 }
