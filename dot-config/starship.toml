@@ -38,6 +38,7 @@ disabled = false
 [directory]
 truncation_length = 100
 truncate_to_repo = false
+fish_style_pwd_dir_length = 0
 home_symbol = "󰋞 ~"
 read_only_style = "197"
 read_only = "  "
