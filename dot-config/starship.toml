@@ -36,7 +36,8 @@ format = "@[$hostname](bold yellow) "
 disabled = false
 
 [directory]
-truncation_length = 0
+truncation_length = 100
+truncate_to_repo = false
 home_symbol = "󰋞 ~"
 read_only_style = "197"
 read_only = "  "
